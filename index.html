@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+    }
+    /* #main {
+      width: 60%;
+      padding: 0 40px;
+    } */
+
+    /* header {
+      background-image: url(/images/head.jpeg);
+      width: 100%;
+      height: 25vh;
+      margin-bottom: 20px;
+    } */
+
+    #show {
+      line-height: 20px;
+      margin-top: 20px;
+    }
+  </style>
+
+  <body>
+    <section>
+      <div id="main">
+        <header></header>
+        <h2>Lyrics of the song 99 Bottles of Beer</h2>
+        <div id="show"></div>
+      </div>
+    </section>
+
+    <script>
+      for (d = 99; d >= 0; d--) {
+        console.log(d);
+        show.innerHTML += `<p> ${d} bottles of beer on the wall, ${d} bottles of beer. <br>
+        Take one down and pass it around, ${d - 1} bottles of beer on the wall.`;
+      }
+    </script>
+  </body>
+</html>
